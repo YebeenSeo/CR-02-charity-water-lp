@@ -1,47 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charity:Water — Give Water, See Proof</title>
+  <meta name="description" content="Transparent updates show exactly how your gift helps bring clean water to communities around the world." />
+
+  <!-- Body font; headings will use Georgia Pro (local) with Georgia fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#main" aria-label="Charity:Water home">
+        <span class="coin coin--sm" aria-hidden="true">🏛️</span>
+        <span class="brand-text">Charity:Water</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="btn btn-header" href="#main">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="main">
     <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+      <div class="container hero-grid">
+        <!-- Left copy -->
+        <div class="hero-copy">
+          <h1>Give Water,<br>See Proof</h1>
+          <p class="hero-sub">
+            Transparent updates show exactly how your gift helps
+            bring clean water to communities around the world.
+          </p>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+          <!-- Input + CTA row -->
+          <form class="cta-row" action="#" method="post" aria-label="Email sign up (demo)">
+            <input type="email" name="email" placeholder="Let’s sign up and get into it!" aria-label="Your email" />
+            <button class="btn btn-go" type="submit">Let’s Go!</button>
+          </form>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+          <p class="hero-trust">
+            Donate between classes—100% of your gift funds clean water,
+            and you’ll get simple updates proving your impact.
+          </p>
         </div>
-    </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+        <!-- Right: framed image with attached coin -->
+        <figure class="hero-media">
+          <img
+            src="https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzLzAwNDQzNGJhNGUwM2Y4ZGEzYWZkMDJkZjZhZTMzYTQ0ZTFkMjMwYzg5NGRjNGQ2NTc4OGFmNjQzYjdiMDI0NzMvcHJldmlldy83MjU1X0V0aGlvcGlhXzIwMTlfQ0ctLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfX19"
+            alt="Smiling child filling a yellow jerry can at a water tap"
+          />
+          <span class="coin coin--lg" aria-hidden="true">🏛️</span>
+        </figure>
+      </div>
     </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>Student demo project. Images and marks are for educational use.</small>
+      <a class="to-top" href="#main">Back to top ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
